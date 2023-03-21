@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Calculador de campo</title>
+</head>
+<body>
+  <h1>Calculador de campo magnetico por aproximacion</h1>
+  <section>
+    <div>
+      Para un material feerro-magnetico cuya curva de imanacion se expresa por una funcion
+      de histeresis dada por la ecuación B = 2e-3 * H / (1 + e-3 * H). 
+      <br> Donde B es el campo y H es la intensidad del campo. Podemos clacular el valor 
+      del campo dadas ciertas condiciones.
+    </div>
+    <input type="text" id="hFormula" value="B/((2e-3) - (1e-3*B))">
+  </section>
+  <section>
+    <form>
+      <label for="fem">Condicion de fuerza</label>
+      <input type="number" id="fem" value="500">
+      <label for="lentrehierro">Longitud de entrehierro</label>
+      <input type="number" id="lentrehierro" value="1e-3">
+      <label for="lmaterial">Longitud de material</label>
+      <input type="number" id="lmaterial" value="1">
+      <label for="campo">Campo propuesto</label>
+      <input type="number" id="campo" value="1">
+      <label for="n">Numero de iteraciones</label>
+      <input type="number" id="n" value="1000">
+    </form>
+    <button id="calcular">Calcular</button>
+    <p id="resultado"></p>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
