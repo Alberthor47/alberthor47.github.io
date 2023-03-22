@@ -11,10 +11,14 @@
   <h1>Calculador de campo magnetico por aproximacion</h1>
   <section>
     <div>
-      Para un material feerro-magnetico cuya curva de imanacion se expresa por una funcion
+      Para un material ferro-magnetico cuya curva de imanacion se expresa por una funcion
       de histeresis dada por la ecuación B = 2e-3 * H / (1 + e-3 * H). 
       <br> Donde B es el campo y H es la intensidad del campo. Podemos clacular el valor 
       del campo dadas ciertas condiciones.
+    </div>
+    <div>
+      Se puede cambiar la ecuación que calcula el campo magnetico si se ingresa a continuacion
+      la ecuacion pero en terminos de la intensiada del campo H. Dejando a B como la variable.
     </div>
     <input type="text" id="hFormula" value="B/((2e-3) - (1e-3*B))">
   </section>
